@@ -11,7 +11,7 @@
     <title>pineapple.</title>
 </head>
 <body>
-    <!--First column-->
+    <!--FIRST COLUMN-->
     <div class="first-column">
         <nav id="nav">
             <span class="logo-group">
@@ -32,24 +32,29 @@
             <img id="success-logo" src="./img/ic_success.svg" alt="Success Logo">
             <h1 class="title" id="title">Subscribe to newsletter</h1>
             <p class="paragraph" id="paragraph">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
-            <form id="myForm" onsubmit="submitted(); return false">
+            <form id="myForm" 
+                method="POST"
+                action="index.php"
+                > 
                 <div class="input-container">
-                    <input class="email-input" 
+                    <input name="email"
+                        class="email-input" 
                         id="email" 
                         type="email" 
                         placeholder="Type your email address here…"
                         autocomplete="off">
-                    <input type="submit" 
+                    <input name="submit"
                         class="material-icons arrow" 
-                        id="inputBtn" 
+                        id="inputBtn"
+                        type="submit"  
                         value="east" 
-                        disabled>
+                        >
                     <p id="errorMessage"></p>
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" 
                         id="checkbox" 
-                        name="agree-terms" 
+                        name="terms" 
                         value="Terms" >
                     <label for="agree-terms">I agree to <a href="#" class="important">terms of service</a></label>
                 </div>
@@ -63,7 +68,7 @@
             </div>
         </div>
     </div>
-    <!--Second column-->
+    <!--SECOND COLUMN-->
     <div class="second-column"></div>
     <script src="./js/btn.js"></script>
     <script src="./js/theme.js"></script>
