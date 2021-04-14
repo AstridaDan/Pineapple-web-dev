@@ -1,0 +1,70 @@
+.logo-container {
+  @include center();
+  margin-top: 50px;
+  margin-bottom: 15%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 16px;
+  max-width: 244px;
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 0;
+    grid-gap: 10px;
+  }
+}
+
+.fa,
+.fab {
+  padding-top: 15px;
+  width: 46px;
+  height: 31px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.8s;
+  border: 2px solid #e2e3e4;
+  background: transparent;
+  color: #131821;
+  opacity: 0.3;
+  &:hover,
+  &:active {
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    opacity: 1;
+  }
+}
+.fa-facebook {
+  &:hover {
+    background: #4267b2;
+    color: white;
+  }
+  &:active {
+    background: #2f4a80;
+  }
+}
+.fa-instagram {
+  &:hover {
+    background: #c13584;
+    color: white;
+  }
+  &:active {
+    background: #8f2762;
+  }
+}
+.fa-twitter {
+  &:hover {
+    background: #1da1f2;
+    color: white;
+  }
+  &:active {
+    background: #177fbf;
+  }
+}
+.fa-youtube {
+  &:hover {
+    background: #ff0000;
+    color: white;
+  }
+  &:active {
+    background: #cc0000;
+  }
+}
