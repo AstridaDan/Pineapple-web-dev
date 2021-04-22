@@ -12,23 +12,21 @@ html {
   overflow-x: hidden;
 }
 body {
-  display: grid;
   margin: 0;
+  overflow-x: hidden;
+  display: grid;
   grid-template-columns: 680px auto;
   grid-gap: 0;
   background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
-  overflow-x: hidden;
   @media screen and (max-width: 799px) {
     grid-template-columns: auto;
   }
 }
 .first-column {
   @media screen and (max-width: 799px) {
-    background-image: url(../img/image_summer.png);
     min-height: 100vh;
-    background-repeat: no-repeat;
+    background: url(../img/image_summer.png) no-repeat center center;
     background-size: cover;
-    background-position: center center;
   }
   @media screen and (max-width: 480px) {
     background-position: -281px center;
@@ -37,9 +35,8 @@ body {
 
 //SECOND COLUMN
 .second-column {
-  background-image: url(../img/image_summer.png);
   min-height: 100vh;
-  background-repeat: no-repeat;
+  background: url(../img/image_summer.png) no-repeat;
   background-size: cover;
   @media screen and (max-width: 799px) {
     display: none;
