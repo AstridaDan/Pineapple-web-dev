@@ -1,8 +1,7 @@
 @import "functions";
 
-nav {
+.nav {
   margin-top: 100px;
-  margin-bottom: 226px;
   text-align: center;
   justify-content: center;
   display: inline-grid;
@@ -25,8 +24,14 @@ nav {
     padding-bottom: 16px;
   }
 }
+#nav {
+  margin-bottom: 226px;
+}
+#nav-success {
+  margin-bottom: 126px;
+}
 
-nav a {
+.nav a {
   @include text-Arial();
   line-height: 26px;
   color: #6a707b;

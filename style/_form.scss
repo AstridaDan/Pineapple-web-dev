@@ -18,9 +18,9 @@
   }
 }
 
-.title {
+.title,
+.title-success {
   margin-top: 0;
-  margin-bottom: 15px;
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -36,23 +36,14 @@
     font-size: 22px;
   }
 }
+.title {
+  margin-bottom: 15px;
+}
+.title-success {
+  margin-bottom: 20px;
+}
 .paragraph,
-.email-input,
-.checkbox-container,
-#errorMessage {
-  @include text-Arial();
-  @media screen and (max-width: 370px) {
-    font-size: 12px;
-  }
-}
-#errorMessage {
-  display: none;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 7px;
-}
-.paragraph {
-  margin-bottom: 55px;
+.paragraph-success {
   margin-top: 0;
   line-height: 28px;
   color: #6a707b;
@@ -62,6 +53,34 @@
     line-height: 26px;
   }
 }
+.paragraph {
+  margin-bottom: 55px;
+}
+.paragraph-success {
+  margin-bottom: 57px;
+}
+
+.paragraph,
+.paragraph-success,
+.email-input,
+.checkbox-container,
+#errorMessage,
+.errMessagePHP {
+  @include text-Arial();
+  @media screen and (max-width: 370px) {
+    font-size: 12px;
+  }
+}
+#errorMessage,
+.errMessagePHP {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+#errorMessage {
+  display: none;
+}
+
 .input-container {
   position: relative;
   margin-left: -40px;
@@ -197,4 +216,7 @@ hr {
 #success-logo {
   margin-bottom: 22px;
   display: none;
+}
+#success-logo-php {
+  margin-bottom: 22px;
 }

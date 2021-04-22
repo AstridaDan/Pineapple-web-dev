@@ -1,3 +1,4 @@
+document.getElementById('inputBtn').disabled = true;
 function checkEmail() {
     var x, text, btn, message, lastChar, last2, email, check;
     x = document.getElementById("email").value;
@@ -9,52 +10,40 @@ function checkEmail() {
     last2 = x.slice(-2);
     email = x.split('@').pop().split('.')[0]; // check letters between @ and .
 
-    valid = true;
-
-
     if (x === "") {
         text = "Email address is required";
-        valid = false;
         btn.disabled = true;
     }  
     else if(!x.includes("@") || !x.includes(".") || x.length < 5 || x.indexOf(' ') >= 0) {
         text =  "Please provide a valid e-mail address";
-        valid = false;
         btn.disabled = true;
     }
     else if (email.length <= 1 || email.search(/[^a-zA-Z]+/) !== -1){
         text =  "Please provide a valid e-mail address";
-        valid = false;
         btn.disabled = true;
     }
     else if (x.charAt(0) === "@" || lastChar.search(/[^a-zA-Z]+/) !== -1){
         text =  "Please provide a valid e-mail address";
-        valid = false;
         btn.disabled = true;
     }
     else if (last2 === "co"){
         text =  "We are not accepting subscriptions from Colombia emails";
-        valid = false;
         btn.disabled = true;
     }
      else if (!check.checked) {
         text   = "You must accept the terms and conditions";
-        valid = false;
         btn.disabled = true;
 
         check.addEventListener('change', function() {
             text =  "";
             btn.disabled = false;
-            valid = true;
         });
      }
     else{
         text =  "";
         btn.disabled = false;
-        valid = true;
         console.log("viss super")
     }
-    console.log(valid);
     message.style.display = "block";
     message.innerHTML = text;
     //hide error message if there is no error
@@ -64,19 +53,20 @@ function checkEmail() {
     }
 }
 
-function submitted(){
-    var form = document.getElementById("myForm");
-    var title = document.getElementById("title");
-    var text = document.getElementById("paragraph");
-    var img = document.getElementById("success-logo");
-    var nav = document.getElementById("nav");
+//SUCCESS MESSAGE FUNCTION
+// function submitted(){
+//     var form = document.getElementById("myForm");
+//     var title = document.getElementById("title");
+//     var text = document.getElementById("paragraph");
+//     var img = document.getElementById("success-logo");
+//     var nav = document.getElementById("nav");
 
-    form.style.display = "none";
+//     form.style.display = "none";
 
-    img.style.display = "block";
-    title.innerHTML = "Thanks for subscribing!";
-    title.style.marginBottom = "20px";
-    text.innerHTML = "You have successfully subscribed to our email listing. Check your email for the discount code.";
-    text.style.marginBottom = "57px";
-    nav.style.marginBottom = "126px";
-}
+//     img.style.display = "block";
+//     title.innerHTML = "Thanks for subscribing!";
+//     title.style.marginBottom = "20px";
+//     text.innerHTML = "You have successfully subscribed to our email listing. Check your email for the discount code.";
+//     text.style.marginBottom = "57px";
+//     nav.style.marginBottom = "126px";
+// }
