@@ -1,10 +1,21 @@
   var  y = document.getElementById("email");
   const  btn = document.getElementById('inputBtn');
   var check = document.getElementById('checkbox');
-  valid = true;
-
+  var x = document.getElementById("email").value;
+  var form = document.getElementById('myForm');
+  var text;
+  var message = document.getElementById("errorMessage");
  
 y.addEventListener("keyup", (e) => {
-   btn.disabled = false;
+  //message.style.display = "none";
+  // btn.disabled = false;
    checkEmail();
+   
 });
+
+//THIS CODE WOULD SHOW SUCCESS MESSAGE WITHOUT PHP
+// btn.addEventListener("click", (e) =>{ 
+//   if (x === "") {
+//     submitted();
+//   }
+// });
