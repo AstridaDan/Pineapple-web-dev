@@ -54,19 +54,19 @@ function checkEmail() {
 }
 
 //SUCCESS MESSAGE FUNCTION
-// function submitted(){
-//     var form = document.getElementById("myForm");
-//     var title = document.getElementById("title");
-//     var text = document.getElementById("paragraph");
-//     var img = document.getElementById("success-logo");
-//     var nav = document.getElementById("nav");
+function submitted(){
+    var form = document.getElementById("myForm");
+    var title = document.getElementById("title");
+    var text = document.getElementById("paragraph");
+    var img = document.getElementById("success-logo");
+    var nav = document.getElementById("nav");
 
-//     form.style.display = "none";
+    form.style.display = "none";
 
-//     img.style.display = "block";
-//     title.innerHTML = "Thanks for subscribing!";
-//     title.style.marginBottom = "20px";
-//     text.innerHTML = "You have successfully subscribed to our email listing. Check your email for the discount code.";
-//     text.style.marginBottom = "57px";
-//     nav.style.marginBottom = "126px";
-// }
+    img.style.display = "block";
+    title.innerHTML = "Thanks for subscribing!";
+    title.style.marginBottom = "20px";
+    text.innerHTML = "You have successfully subscribed to our email listing. Check your email for the discount code.";
+    text.style.marginBottom = "57px";
+    nav.style.marginBottom = "126px";
+}

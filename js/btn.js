@@ -7,15 +7,14 @@
   var message = document.getElementById("errorMessage");
  
 y.addEventListener("keyup", (e) => {
-  //message.style.display = "none";
-  // btn.disabled = false;
-   checkEmail();
+  message.style.display = "none";
+  btn.disabled = false;
+  checkEmail();
    
 });
 
 //THIS CODE WOULD SHOW SUCCESS MESSAGE WITHOUT PHP
-// btn.addEventListener("click", (e) =>{ 
-//   if (x === "") {
-//     submitted();
-//   }
-// });
+form.addEventListener("submit", (e) =>{ 
+  submitted();
+  e.preventDefault()
+});
