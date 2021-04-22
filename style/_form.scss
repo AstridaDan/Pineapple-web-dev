@@ -1,20 +1,20 @@
 .subscribe {
   @include center();
-  max-width: 400px;
   margin-bottom: 23%;
+  max-width: 400px;
   @media screen and (max-width: 799px) {
-    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
-    max-width: 100%;
-    height: auto;
     margin-right: 6%;
     margin-left: 6%;
     padding: 8% 5%;
+    max-width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
   }
   @media screen and (max-width: 480px) {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 187px;
-    padding: 25px 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -41,18 +41,9 @@
 }
 .title-success {
   margin-bottom: 20px;
+  margin-top: 10px;
 }
-.paragraph,
-.paragraph-success {
-  margin-top: 0;
-  line-height: 28px;
-  color: #6a707b;
-  @media screen and (max-width: 480px) {
-    margin-bottom: 26px;
-    font-size: 14px;
-    line-height: 26px;
-  }
-}
+
 .paragraph {
   margin-bottom: 55px;
 }
@@ -69,6 +60,17 @@
   @include text-Arial();
   @media screen and (max-width: 370px) {
     font-size: 12px;
+  }
+}
+.paragraph,
+.paragraph-success {
+  margin-top: 0;
+  line-height: 28px;
+  color: #6a707b;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 #errorMessage,
@@ -92,10 +94,10 @@
   }
 }
 .arrow {
-  width: 64px;
   margin-left: -65px;
-  text-align: left;
+  width: 64px;
   padding: 0;
+  text-align: left;
   border: none;
   background: transparent;
   color: #131821;
@@ -120,14 +122,14 @@
 }
 
 .email-input {
-  min-width: 663px;
+  box-sizing: border-box;
   padding: 23px 40px;
+  min-width: 663px;
+  line-height: 24px;
+  color: #6a707b;
   background: #ffffff;
   border: 1px solid #e3e3e4;
   border-left: 4px solid #4066a5;
-  box-sizing: border-box;
-  color: #6a707b;
-  line-height: 24px;
   transition: all 0.5s ease;
   &:hover {
     border: 1px solid #4066a5;
@@ -154,37 +156,37 @@
 }
 
 .checkbox-container {
+  margin-bottom: 61px;
+  margin-top: 12px;
   line-height: 28px;
   color: #6a707b;
-  margin-bottom: 56px;
-  margin-top: 12px;
   @media screen and (max-width: 480px) {
-    line-height: 24px;
     margin-top: 13px;
     margin-bottom: 29px;
+    line-height: 24px;
   }
   input {
-    cursor: pointer;
-    font-size: 14px;
-    visibility: hidden;
     margin-right: 15px;
     margin-top: -3px;
     margin-left: 0;
+    font-size: 14px;
+    cursor: pointer;
+    visibility: hidden;
   }
 
   input:after {
     margin-top: -3px;
-    content: " ";
-    background-color: rgb(255, 255, 255);
+    padding: 0 2px 1px 4px;
     display: inline-block;
     color: #ffffff;
     width: 14px;
     height: 19px;
-    visibility: visible;
+    background-color: rgb(255, 255, 255);
     border: 1px solid #fff;
-    padding: 0 2px 1px 4px;
     border-radius: 3px;
     border: 1px solid #e3e3e4;
+    visibility: visible;
+    content: " ";
   }
   input:checked:after {
     content: "\2714";
@@ -214,9 +216,9 @@ hr {
   }
 }
 #success-logo {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
   display: none;
 }
 #success-logo-php {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }

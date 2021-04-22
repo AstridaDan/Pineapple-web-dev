@@ -162,11 +162,7 @@ function js_link($src)
     <!--SECOND COLUMN-->
     <div class="second-column"></div>
 
-    <!-- <script type="text/javascript" src="./js/btn.js"></script>
-    <script type="text/javascript" src="./js/theme.js"></script> -->
-
-    
-    <?php echo '<script type="text/javascript" src="./js/theme.js"></script>'?>
-    <?php echo '<script type="text/javascript" src="./js/btn.js"></script>' ?>
+    <script type="text/javascript" src="./js/btn.js"></script>
+    <script type="text/javascript" src="./js/theme.js"></script>
 </body>
 </html>
